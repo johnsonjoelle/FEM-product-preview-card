@@ -18,13 +18,14 @@
 body {
   background: var(--cream);
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; padding: 10px 0 5px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 main {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
+  grid-template-rows: 1fr max-content;
   place-items: center;
   min-height: 100vh;
 }
@@ -106,4 +107,25 @@ s {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+#addToCart:hover,
+#addToCart:focus-visible {
+  background: hsl(158, 36%, 17%);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  #preview {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .hide-for-mobile {
+    display: none;
+  }
+  .show-for-mobile {
+    display: block;
+  }
+  #content .para {
+    margin-bottom: 35px;
+  }
 }
