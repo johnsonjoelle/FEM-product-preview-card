@@ -115,7 +115,7 @@ s {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 599px) {
   #preview {
     grid-template-columns: 1fr;
     margin: 20px;
